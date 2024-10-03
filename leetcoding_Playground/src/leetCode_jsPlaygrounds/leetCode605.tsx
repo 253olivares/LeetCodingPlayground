@@ -32,23 +32,49 @@
 // }
 
 export function canPlaceFlowers(flowerbed: number[], n: number): boolean {
-    let counter = 0
-    
-        // for(let i=0; i<flowerbed.length-1 ; i++) {
-        //     if(flowerbed[i] === 0 && flowerbed[i-1] === 0 && flowerbed[i+1]===0 ) {
-        //         counter++
-        //         i++
-        //     }
-        //     if  (flowerbed[i]===0 && i===0 && flowerbed[i+1]===0) counter ++;
-        //     if (flowerbed[i]==0 && i==flowerbed.length-1 && flowerbed[i-1]==0) counter++;
-    
-        // }
-    
-        flowerbed.forEach((plot, index) => {
-            console.log("Flower:",plot,"At:",index)
-        });
+        let counter = 0
+        
+            // for(let i=0; i<flowerbed.length-1 ; i++) {
+            //     if(flowerbed[i] === 0 && flowerbed[i-1] === 0 && flowerbed[i+1]===0 ) {
+            //         counter++
+            //         i++
+            //     }
+            //     if  (flowerbed[i]===0 && i===0 && flowerbed[i+1]===0) counter ++;
+            //     if (flowerbed[i]==0 && i==flowerbed.length-1 && flowerbed[i-1]==0) counter++;
+        
+            // }
+        
+            // flowerbed.forEach((plot, index) => {
+            //     console.log("Flower:",plot,"At:",index)
+            //     let plotBehind = flowerbed[index-1];
+            //     let plotInfront = flowerbed[index+1];
+            //     if (plot === 0 && plotBehind === 0 || null && plotInfront === 0 || null) {
+            //         counter ++;
+            //         console.log(plot === 0 && plotBehind === 0 || null && plotInfront === 0 || null);
+            //     }
 
-        return n <= counter;
+                
+            // });
+
+            console.log(flowerbed.length)
+
+            for(let i = 0; i< flowerbed.length; i++){
+                console.log("Flower:",flowerbed[i],"At:",i)
+                let previousBed = flowerbed[i-1];
+                console.log("previous:",previousBed);
+                let nextBed = flowerbed[i+1];
+                console.log("next:",nextBed);
+                if(flowerbed[i]===0 && (previousBed === 0 || previousBed === undefined )&& (nextBed === 0 || nextBed === undefined) ) {
+                    console.log(previousBed)
+                    console.log(i)
+                    console.log(nextBed)
+                    counter++;
+                    i++;
+                }
+
+            }
+
+            return n<=counter;
     }
 
     // test

@@ -5,6 +5,7 @@ import './App.css'
 // import { practice3 } from './leetCode_jsPlaygrounds/practice3'
 import { practice1768 } from './leetCode_jsPlaygrounds/leetCode1768'
 import { canPlaceFlowers } from './leetCode_jsPlaygrounds/leetCode605'
+import { reverseVowels } from './leetCode_jsPlaygrounds/leetCode345'
 // import { practice1 } from './leetCode_jsPlaygrounds/practice1'
 // import { practice2 } from './leetCode_jsPlaygrounds/practice2'
 
@@ -38,8 +39,14 @@ function App() {
   // console.log(practice3(nums1,nums2));
   // console.log(practice1768("abc","pqr"));
 
-  canPlaceFlowers([1,0,0,0,1,0,0],2);
+  // console.log (canPlaceFlowers([1,0,0,0,1],1));
+  // console.log(canPlaceFlowers([1,0,0,0,0,1],2));
+    // console.log(canPlaceFlowers([1,0,0,0,1,0,0],2));
+  // console.log(canPlaceFlowers([1,0,0,0,0,1],2));
+  // console.log(canPlaceFlowers([0,0,1,0,1],1));
 
+  console.log(reverseVowels("Ice CreAm"));
+  // console.log(reverseVowels("leetcode"));
   return (
     <>
       <div>
