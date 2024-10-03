@@ -35,7 +35,7 @@ function App() {
   // let nums2 = ["1vas"];
 
   // console.log(practice3(nums1,nums2));
-  console.log(practice1768("abc","pqr"));
+  // console.log(practice1768("abc","pqr"));
 
   return (
     <>
