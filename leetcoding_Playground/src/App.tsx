@@ -6,6 +6,9 @@ import './App.css'
 import { practice1768 } from './leetCode_jsPlaygrounds/leetCode1768'
 import { canPlaceFlowers } from './leetCode_jsPlaygrounds/leetCode605'
 import { reverseVowels } from './leetCode_jsPlaygrounds/leetCode345'
+import { reverseWords } from './leetCode_jsPlaygrounds/leetCode151'
+import { productExceptSelf } from './leetCode_jsPlaygrounds/leetcode238'
+import { increasingTriplet } from './leetCode_jsPlaygrounds/leetCode334'
 // import { practice1 } from './leetCode_jsPlaygrounds/practice1'
 // import { practice2 } from './leetCode_jsPlaygrounds/practice2'
 
@@ -45,8 +48,16 @@ function App() {
   // console.log(canPlaceFlowers([1,0,0,0,0,1],2));
   // console.log(canPlaceFlowers([0,0,1,0,1],1));
 
-  console.log(reverseVowels("Ice CreAm"));
-  // console.log(reverseVowels("leetcode"));
+  // console.log(reverseVowels("Ice CreAm"));
+  // // console.log(reverseVowels("leetcode"));
+
+  // console.log(reverseWords("the sky is blue"));
+  // console.log(reverseWords("  hello world  "));
+  // console.log(reverseWords("a good   example"));
+
+  // console.log("answer",productExceptSelf([1,2,3,4]))
+
+  console.log(increasingTriplet([6,7,1,2]));
   return (
     <>
       <div>
